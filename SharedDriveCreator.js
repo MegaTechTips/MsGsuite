@@ -1,10 +1,10 @@
 var authConfig = {
 version: "2.0",
 dailyLimit: true, // Whether to limit each mailbox to submit requests only once a day
-client_id: '', // Google Client ID
-client_secret: '', // Google Client Secret
-refresh_token: '', // Refresh token
-domain: "! ", //College name to display
+client_id: '761730022064-cqfo3l9bdi2vjktf36ht71vfl4p5fd27.apps.googleusercontent.com', // Google Client ID
+client_secret: '6DPiLW2lWSZ2aFxxA31YI-D3', // Google Client Secret
+refresh_token: '1//04NngkexmKTw7CgYIARAAGAQSNwF-L9Irr2aDNR8l9x7l_wmnm3M3KXCfPiok4qlZ94BhVXpLDCCns8SqVlDt1WL-ge6Ui4vV_mM', // Refresh token
+domain: "The Learner's Core ", //College name to display
 black_list: [""]
 };
 var gd;
@@ -14,7 +14,7 @@ authConfig.domainCount = 4;  //Remplace 4 by the number of different drives you 
 // Create an account at https://dashboard.hcaptcha.com/signup and fulfill all details
 var hCaptchaConfig = {  
     secret: '',
-    sitekey: ''
+    sitekey: '226c3de4-2c3a-447f-aaed-af63a132a6d5'
 };
 
 
@@ -389,7 +389,7 @@ var html = `
                     </select>
                 </div>
                 <div class="form-group">
-                    <div class="h-captcha" data-sitekey="your sitekey here" data-theme="dark"></div>
+                    <div class="h-captcha" data-sitekey="226c3de4-2c3a-447f-aaed-af63a132a6d5" data-theme="dark"></div>
                 </div>
                 <div class="form-check" style="visibility:hidden;">
                     <input type="checkbox" class="form-check-input" id="customTheme" value="" />
@@ -602,7 +602,7 @@ async function handleRequest(request) {
                console.log(234);
                //The client secret and the refresh token used here are the one set in the beginning of the file
                authConfig.refresh_token =
-                   "REFRESH TOKEN";
+                   "1//04NngkexmKTw7CgYIARAAGAQSNwF-L9Irr2aDNR8l9x7l_wmnm3M3KXCfPiok4qlZ94BhVXpLDCCns8SqVlDt1WL-ge6Ui4vV_mM";
                authConfig.domain = "NAME OF THE DOMAIN (it can be empty)";
            }
            if (requestBody.channel == 2) {
